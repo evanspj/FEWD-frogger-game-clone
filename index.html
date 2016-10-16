@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Effective JavaScript: Frogger</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    </head>
+
+    <body>
+        <main id="main" class="row">
+        	<div class="screen-size-message col">
+        		<h3>Ooops!</h3>
+        		<p>Looks like your screen size is too small to play :/</p>
+        		<p>Try to view this site on a larger screen!</p>
+        	</div>
+            <div class="message success-container row">
+                <div class="success-message">
+                    <h3>Nice Job!! You Made it to the other side!</h3>
+                    <p>Points Earned: 20
+                        <br>Total Points: <span class="points">0</span>
+                    </p>
+                    <h3>Want to play agian?</h3>
+                    <button id="play-btn">play again</button>
+                    <button id="close-btn">close</button>
+                </div>
+            </div>
+            <section class="instructions">
+                <div id="close-menu">
+                    <span class="bar-one"></span>
+                    <span class="bar-two"></span>
+                </div>
+                <h2 class="instructions-title">Instructions</h2>
+                <ol class="instruction-list">
+                    <li>The goal of the game is to get the bunny to the other side without getting hit by traffic. In order to succeed, <strong><em>you will need to collect the carrot</em></strong> on the other side of the road.</li>
+                    <li>Movement Controls:
+                        <br>
+                        <p>In order to move accross the screen, you will need to use your directional arrow keys on your keyboard.</p>
+                        <p>Use the <span class="key-wide">&larr;</span> arrow to move left.</p>
+                        <p>Use the <span class="key-wide">&rarr;</span> arrow to move right.</p>
+                        <p>Use the <span class="key-tall">&uarr;</span> arrow to move up.</p>
+                        <p>Use the <span class="key-tall">&darr;</span> arrow to move down.</p>
+                    </li>
+                    <li> General Key Controls:
+                        <br>
+                        <p>Use the <span class="key-wide">S</span> key to start and stop/pause the game.</p>
+                        <p>Use the <span class="key-wide">R</span> key to reset the game. (Note that this will not reset your health and score, but only the location of the carrot and create new cars and bikes.)</p>
+                    </li>
+                    <li>Points are collected when you cross the road and collect the carrot. Every time you collect the carrot you will be awarded 20 points.</li>
+                    <li>When you start the game, your health will begin with four hearts. If you collide with a car or a bicycle you will lose one of your hearts. Once you have lost all four hearts, the game will end and everything in the game will be reset.</li>
+                    <li>Good luck and enjoy!</li>
+                </ol>
+            </section>
+            <section class="game-canvas row">
+                <div id="menu">
+                    <span class="hamburger-bar top"></span>
+                    <span class="hamburger-bar middle"></span>
+                    <span class="hamburger-bar bottom"></span>
+                </div>
+                <div class="start-message-container row">
+                    <div class="start-game-message">
+                        <h3>You ready to play?</h3>
+                        <button id="start-btn">start game!</button>
+                    </div>
+                </div>
+                <div class="title">
+                    <h2>Classic Frogger Clone - City Bunny Style</h2>
+                </div>
+                <div class="score-health-container row">
+                    <div class="score-box"><span class="points">0</span> points</div>
+                </div>
+            </section>
+            <div class="message game-over-container">
+                <div class="game-over-message">
+                    <h3>GAME OVER</h3>
+                    <p>Looks like you used up all 4 lives.</p>
+                    <p>Total Points: <span class="points">0</span></p>
+                    <h3>Want to give it another go?</h3>
+                    <button id="game-reset-btn">play again</button>
+                    <button id="reset-close-btn">close</button>
+                </div>
+            </div>
+        </main>
+        <script src="js/resources.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/engine.js"></script>
+    </body>
+
+</html>
