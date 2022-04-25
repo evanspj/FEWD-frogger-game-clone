@@ -1,6 +1,6 @@
 # Classic Frogger Game Clone - City Bunny Style
 
-Game URL: https://irishboy922.github.io/FEWD-frogger-game-clone/
+Game URL: https://evanspj.github.io/FEWD-frogger-game-clone/
 
 ## Instructions
 ---
